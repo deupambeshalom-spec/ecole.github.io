@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paiements | Gestion d'école</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="navbar">
+      <div class="logo">École Manager</div>
+      <nav>
+        <a href="index.html">Tableau de bord</a>
+        <a href="etudiants.html">Élèves</a>
+        <a href="enseignants.html">Enseignants</a>
+        <a href="classes.html">Classes</a>
+        <a href="matieres.html">Matières</a>
+        <a href="notes.html">Notes</a>
+        <a href="emploi-du-temps.html">Emploi du temps</a>
+        <a href="paiements.html" class="active">Paiements</a>
+        <a href="login.html">Déconnexion</a>
+      </nav>
+    </header>
+
+    <main class="main">
+      <header class="topbar">
+        <h1>Gestion des paiements</h1>
+        <div class="user-box"><div class="avatar">A</div><span>Administrateur</span></div>
+      </header>
+
+      <section class="stats">
+        <div class="stat-card green">
+          <div class="label">Encaissé ce mois</div>
+          <div class="value">184 800 MAD</div>
+        </div>
+        <div class="stat-card orange">
+          <div class="label">En attente</div>
+          <div class="value">42 000 MAD</div>
+        </div>
+        <div class="stat-card red">
+          <div class="label">Élèves en retard</div>
+          <div class="value">27</div>
+        </div>
+      </section>
+
+      <section class="panel">
+        <h2>Enregistrer un paiement</h2>
+        <form action="#" method="post">
+          <div class="form-grid">
+            <div class="field">
+              <label for="eleve">Élève</label>
+              <select id="eleve"><option>Amina Benali</option><option>Youssef El Idrissi</option><option>Salma Tazi</option></select>
+            </div>
+            <div class="field">
+              <label for="mois">Mois concerné</label>
+              <select id="mois"><option>Novembre</option><option>Décembre</option><option>Janvier</option></select>
+            </div>
+            <div class="field">
+              <label for="montant">Montant (MAD)</label>
+              <input type="number" id="montant" min="0" value="600">
+            </div>
+            <div class="field">
+              <label for="mode">Mode de paiement</label>
+              <select id="mode"><option>Espèces</option><option>Virement</option><option>Chèque</option></select>
+            </div>
+            <div class="field">
+              <label for="date">Date</label>
+              <input type="date" id="date">
+            </div>
+          </div>
+          <button type="submit" class="btn">Valider le paiement</button>
+          <button type="reset" class="btn secondary">Annuler</button>
+        </form>
+      </section>
+
+      <section class="panel">
+        <div class="toolbar">
+          <h2>Historique des paiements</h2>
+          <input type="search" placeholder="Rechercher un élève...">
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr><th>Élève</th><th>Classe</th><th>Mois</th><th>Montant</th><th>Date</th><th>Statut</th><th>Actions</th></tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Amina Benali</td><td>3e A</td><td>Octobre</td><td>600 MAD</td><td>03/10/2026</td>
+                <td><span class="badge ok">Payé</span></td>
+                <td><a href="#" class="btn small secondary">Reçu</a></td>
+              </tr>
+              <tr>
+                <td>Youssef El Idrissi</td><td>6e B</td><td>Octobre</td><td>300 / 600 MAD</td><td>12/10/2026</td>
+                <td><span class="badge warn">Partiel</span></td>
+                <td><a href="#" class="btn small secondary">Reçu</a></td>
+              </tr>
+              <tr>
+                <td>Salma Tazi</td><td>2nde C</td><td>Octobre</td><td>0 / 600 MAD</td><td>-</td>
+                <td><span class="badge ko">En retard</span></td>
+                <td><a href="#" class="btn small">Relancer</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>&copy; 2026 École Manager. Tous droits réservés.</p>
+      <p>Contact : contact@ecole.ma | Rabat, Maroc</p>
+    </footer>
+</body>
+</html>

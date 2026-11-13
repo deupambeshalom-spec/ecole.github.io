@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enseignants | Gestion d'école</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="navbar">
+      <div class="logo">École Manager</div>
+      <nav>
+        <a href="index.html">Tableau de bord</a>
+        <a href="etudiants.html">Élèves</a>
+        <a href="enseignants.html" class="active">Enseignants</a>
+        <a href="classes.html">Classes</a>
+        <a href="matieres.html">Matières</a>
+        <a href="notes.html">Notes</a>
+        <a href="emploi-du-temps.html">Emploi du temps</a>
+        <a href="paiements.html">Paiements</a>
+        <a href="login.html">Déconnexion</a>
+      </nav>
+    </header>
+
+    <main class="main">
+      <header class="topbar">
+        <h1>Gestion des enseignants</h1>
+        <div class="user-box"><div class="avatar">A</div><span>Administrateur</span></div>
+      </header>
+
+      <section class="panel">
+        <h2>Ajouter un enseignant</h2>
+        <form action="#" method="post">
+          <div class="form-grid">
+            <div class="field">
+              <label for="nom">Nom</label>
+              <input type="text" id="nom" required>
+            </div>
+            <div class="field">
+              <label for="prenom">Prénom</label>
+              <input type="text" id="prenom" required>
+            </div>
+            <div class="field">
+              <label for="matiere">Matière enseignée</label>
+              <select id="matiere">
+                <option>Mathématiques</option>
+                <option>Physique-Chimie</option>
+                <option>Français</option>
+                <option>Anglais</option>
+                <option>Histoire-Géographie</option>
+                <option>Informatique</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="email">E-mail</label>
+              <input type="email" id="email">
+            </div>
+            <div class="field">
+              <label for="tel">Téléphone</label>
+              <input type="tel" id="tel">
+            </div>
+            <div class="field">
+              <label for="embauche">Date d'embauche</label>
+              <input type="date" id="embauche">
+            </div>
+          </div>
+          <button type="submit" class="btn">Enregistrer</button>
+          <button type="reset" class="btn secondary">Annuler</button>
+        </form>
+      </section>
+
+      <section class="panel">
+        <div class="toolbar">
+          <h2>Liste des enseignants</h2>
+          <input type="search" placeholder="Rechercher un enseignant...">
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr><th>N°</th><th>Nom complet</th><th>Matière</th><th>E-mail</th><th>Téléphone</th><th>Actions</th></tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>E01</td><td>Karim Alaoui</td><td>Mathématiques</td><td>k.alaoui@ecole.ma</td><td>06 11 22 33 44</td>
+                <td><a href="#" class="btn small secondary">Modifier</a> <a href="#" class="btn small danger">Supprimer</a></td>
+              </tr>
+              <tr>
+                <td>E02</td><td>Nadia Chraibi</td><td>Français</td><td>n.chraibi@ecole.ma</td><td>06 55 66 77 88</td>
+                <td><a href="#" class="btn small secondary">Modifier</a> <a href="#" class="btn small danger">Supprimer</a></td>
+              </tr>
+              <tr>
+                <td>E03</td><td>Omar Bennani</td><td>Informatique</td><td>o.bennani@ecole.ma</td><td>06 99 88 77 66</td>
+                <td><a href="#" class="btn small secondary">Modifier</a> <a href="#" class="btn small danger">Supprimer</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>&copy; 2026 École Manager. Tous droits réservés.</p>
+      <p>Contact : contact@ecole.ma | Rabat, Maroc</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mes notes | École Manager</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="navbar">
+      <div class="logo">École Manager <small style="font-weight:400;opacity:.7;">| Espace élève</small></div>
+      <nav>
+        <a href="eleve-accueil.html">Accueil</a>
+        <a href="eleve-notes.html" class="active">Mes notes</a>
+        <a href="eleve-emploi.html">Emploi du temps</a>
+        <a href="eleve-paiements.html">Mes paiements</a>
+        <a href="login.html">Déconnexion</a>
+      </nav>
+    </header>
+
+    <main class="main">
+      <header class="topbar">
+        <h1>Mes notes</h1>
+        <div class="user-box"><div class="avatar">A</div><span>Amina Benali</span></div>
+      </header>
+
+      <section class="panel">
+        <div class="filters">
+          <div class="field">
+            <label for="trimestre">Trimestre</label>
+            <select id="trimestre"><option>Trimestre 1</option><option>Trimestre 2</option><option>Trimestre 3</option></select>
+          </div>
+        </div>
+
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr><th>Matière</th><th>Coef.</th><th>Devoir 1</th><th>Devoir 2</th><th>Examen</th><th>Moyenne</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Mathématiques</td><td>4</td><td>14</td><td>16</td><td>15</td><td><span class="badge ok">15,00</span></td></tr>
+              <tr><td>Physique-Chimie</td><td>3</td><td>12</td><td>13</td><td>14</td><td><span class="badge ok">13,25</span></td></tr>
+              <tr><td>Français</td><td>3</td><td>11</td><td>13</td><td>12</td><td><span class="badge warn">12,00</span></td></tr>
+              <tr><td>Anglais</td><td>2</td><td>16</td><td>15</td><td>17</td><td><span class="badge ok">16,25</span></td></tr>
+              <tr><td>Histoire-Géographie</td><td>2</td><td>10</td><td>12</td><td>11</td><td><span class="badge warn">11,00</span></td></tr>
+              <tr><td>Informatique</td><td>2</td><td>17</td><td>18</td><td>16</td><td><span class="badge ok">16,75</span></td></tr>
+              <tr class="summary-row"><td colspan="5">Moyenne générale</td><td>13,98 / 20</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p style="margin-top:12px;color:var(--muted);font-size:.88rem;">Moyenne d'une matière = (Devoir 1 + Devoir 2 + 2 × Examen) / 4.</p>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>&copy; 2026 École Manager. Tous droits réservés.</p>
+      <p>Contact : contact@ecole.ma | Rabat, Maroc</p>
+    </footer>
+</body>
+</html>

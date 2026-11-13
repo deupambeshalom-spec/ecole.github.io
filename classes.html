@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Classes | Gestion d'école</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="navbar">
+      <div class="logo">École Manager</div>
+      <nav>
+        <a href="index.html">Tableau de bord</a>
+        <a href="etudiants.html">Élèves</a>
+        <a href="enseignants.html">Enseignants</a>
+        <a href="classes.html" class="active">Classes</a>
+        <a href="matieres.html">Matières</a>
+        <a href="notes.html">Notes</a>
+        <a href="emploi-du-temps.html">Emploi du temps</a>
+        <a href="paiements.html">Paiements</a>
+        <a href="login.html">Déconnexion</a>
+      </nav>
+    </header>
+
+    <main class="main">
+      <header class="topbar">
+        <h1>Gestion des classes</h1>
+        <div class="user-box"><div class="avatar">A</div><span>Administrateur</span></div>
+      </header>
+
+      <section class="panel">
+        <h2>Créer une classe</h2>
+        <form action="#" method="post">
+          <div class="form-grid">
+            <div class="field">
+              <label for="nom">Nom de la classe</label>
+              <input type="text" id="nom" placeholder="3e A" required>
+            </div>
+            <div class="field">
+              <label for="niveau">Niveau</label>
+              <select id="niveau">
+                <option>6e</option>
+                <option>5e</option>
+                <option>4e</option>
+                <option>3e</option>
+                <option>2nde</option>
+                <option>1re</option>
+                <option>Terminale</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="effectif">Effectif maximum</label>
+              <input type="number" id="effectif" min="1" value="30">
+            </div>
+            <div class="field">
+              <label for="principal">Enseignant principal</label>
+              <select id="principal">
+                <option>Karim Alaoui</option>
+                <option>Nadia Chraibi</option>
+                <option>Omar Bennani</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="salle">Salle</label>
+              <input type="text" id="salle" placeholder="Salle 12">
+            </div>
+          </div>
+          <button type="submit" class="btn">Enregistrer</button>
+          <button type="reset" class="btn secondary">Annuler</button>
+        </form>
+      </section>
+
+      <section class="panel">
+        <h2>Liste des classes</h2>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr><th>Classe</th><th>Niveau</th><th>Effectif</th><th>Enseignant principal</th><th>Salle</th><th>Actions</th></tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>6e B</td><td>6e</td><td>28 / 30</td><td>Nadia Chraibi</td><td>Salle 4</td>
+                <td><a href="#" class="btn small secondary">Modifier</a> <a href="#" class="btn small danger">Supprimer</a></td>
+              </tr>
+              <tr>
+                <td>3e A</td><td>3e</td><td>30 / 30</td><td>Karim Alaoui</td><td>Salle 12</td>
+                <td><a href="#" class="btn small secondary">Modifier</a> <a href="#" class="btn small danger">Supprimer</a></td>
+              </tr>
+              <tr>
+                <td>2nde C</td><td>2nde</td><td>26 / 32</td><td>Omar Bennani</td><td>Salle 21</td>
+                <td><a href="#" class="btn small secondary">Modifier</a> <a href="#" class="btn small danger">Supprimer</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>&copy; 2026 École Manager. Tous droits réservés.</p>
+      <p>Contact : contact@ecole.ma | Rabat, Maroc</p>
+    </footer>
+</body>
+</html>

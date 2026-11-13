@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tableau de bord | Gestion d'école</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="navbar">
+      <div class="logo">École Manager</div>
+      <nav>
+        <a href="index.html" class="active">Tableau de bord</a>
+        <a href="public.html">Espace public</a>
+        <a href="etudiants.html">Élèves</a>
+        <a href="enseignants.html">Enseignants</a>
+        <a href="classes.html">Classes</a>
+        <a href="matieres.html">Matières</a>
+        <a href="notes.html">Notes</a>
+        <a href="emploi-du-temps.html">Emploi du temps</a>
+        <a href="paiements.html">Paiements</a>
+        <a href="login.html">Déconnexion</a>
+      </nav>
+    </header>
+
+    <main class="main">
+      <header class="topbar">
+        <div>
+          <h1>Tableau de bord</h1>
+          <p class="topbar-subtitle">Vue d’ensemble de votre établissement</p>
+        </div>
+        <div class="user-box">
+          <div class="avatar">A</div>
+          <span>Administrateur</span>
+        </div>
+      </header>
+
+      <section class="dashboard-welcome">
+        <div>
+          <span class="eyebrow">GESTION DE L’ÉTABLISSEMENT</span>
+          <h2>Bonjour, Administrateur</h2>
+          <p>Retrouvez les indicateurs clés et les dernières activités de votre école.</p>
+        </div>
+        <a class="btn dashboard-link" href="public.html">Voir l’espace public <span aria-hidden="true">→</span></a>
+      </section>
+
+      <section class="stats">
+        <div class="stat-card">
+          <div class="label">Élèves inscrits</div>
+          <div class="value">482</div>
+        </div>
+        <div class="stat-card green">
+          <div class="label">Enseignants</div>
+          <div class="value">36</div>
+        </div>
+        <div class="stat-card orange">
+          <div class="label">Classes</div>
+          <div class="value">18</div>
+        </div>
+        <div class="stat-card red">
+          <div class="label">Paiements en retard</div>
+          <div class="value">27</div>
+        </div>
+      </section>
+
+      <div class="grid-2">
+        <section class="panel">
+          <h2>Dernières inscriptions</h2>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Nom</th>
+                  <th>Classe</th>
+                  <th>Date</th>
+                  <th>Statut</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Amina Benali</td>
+                  <td>3e A</td>
+                  <td>02/11/2026</td>
+                  <td><span class="badge ok">Validée</span></td>
+                </tr>
+                <tr>
+                  <td>Youssef El Idrissi</td>
+                  <td>6e B</td>
+                  <td>01/11/2026</td>
+                  <td><span class="badge warn">En attente</span></td>
+                </tr>
+                <tr>
+                  <td>Salma Tazi</td>
+                  <td>2nde C</td>
+                  <td>30/10/2026</td>
+                  <td><span class="badge ok">Validée</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section class="panel">
+          <h2>Activité récente</h2>
+          <ul class="activity">
+            <li>Nouvelle note saisie en Mathématiques <small>Il y a 10 min</small></li>
+            <li>Paiement reçu : Amina Benali <small>Il y a 1 h</small></li>
+            <li>Absence enregistrée en 4e B <small>Il y a 3 h</small></li>
+            <li>Emploi du temps modifié : 1re S <small>Hier</small></li>
+          </ul>
+        </section>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <p>&copy; 2026 École Manager. Tous droits réservés.</p>
+      <p>Contact : contact@ecole.ma | Rabat, Maroc</p>
+    </footer>
+</body>
+</html>

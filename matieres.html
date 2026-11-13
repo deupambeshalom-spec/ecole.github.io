@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Matières | Gestion d'école</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="navbar">
+      <div class="logo">École Manager</div>
+      <nav>
+        <a href="index.html">Tableau de bord</a>
+        <a href="etudiants.html">Élèves</a>
+        <a href="enseignants.html">Enseignants</a>
+        <a href="classes.html">Classes</a>
+        <a href="matieres.html" class="active">Matières</a>
+        <a href="notes.html">Notes</a>
+        <a href="emploi-du-temps.html">Emploi du temps</a>
+        <a href="paiements.html">Paiements</a>
+        <a href="login.html">Déconnexion</a>
+      </nav>
+    </header>
+
+    <main class="main">
+      <header class="topbar">
+        <h1>Gestion des matières</h1>
+        <div class="user-box"><div class="avatar">A</div><span>Administrateur</span></div>
+      </header>
+
+      <section class="panel">
+        <h2>Ajouter une matière</h2>
+        <form action="#" method="post">
+          <div class="form-grid">
+            <div class="field">
+              <label for="intitule">Intitulé</label>
+              <input type="text" id="intitule" required>
+            </div>
+            <div class="field">
+              <label for="coef">Coefficient</label>
+              <input type="number" id="coef" min="1" max="10" value="1">
+            </div>
+            <div class="field">
+              <label for="volume">Volume horaire hebdomadaire</label>
+              <input type="number" id="volume" min="1" value="3">
+            </div>
+            <div class="field">
+              <label for="prof">Enseignant</label>
+              <select id="prof">
+                <option>Karim Alaoui</option>
+                <option>Nadia Chraibi</option>
+                <option>Omar Bennani</option>
+              </select>
+            </div>
+          </div>
+          <button type="submit" class="btn">Enregistrer</button>
+          <button type="reset" class="btn secondary">Annuler</button>
+        </form>
+      </section>
+
+      <section class="panel">
+        <h2>Liste des matières</h2>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr><th>Matière</th><th>Coefficient</th><th>Heures / semaine</th><th>Enseignant</th><th>Actions</th></tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Mathématiques</td><td>4</td><td>5 h</td><td>Karim Alaoui</td>
+                <td><a href="#" class="btn small secondary">Modifier</a> <a href="#" class="btn small danger">Supprimer</a></td>
+              </tr>
+              <tr>
+                <td>Français</td><td>3</td><td>4 h</td><td>Nadia Chraibi</td>
+                <td><a href="#" class="btn small secondary">Modifier</a> <a href="#" class="btn small danger">Supprimer</a></td>
+              </tr>
+              <tr>
+                <td>Informatique</td><td>2</td><td>2 h</td><td>Omar Bennani</td>
+                <td><a href="#" class="btn small secondary">Modifier</a> <a href="#" class="btn small danger">Supprimer</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>&copy; 2026 École Manager. Tous droits réservés.</p>
+      <p>Contact : contact@ecole.ma | Rabat, Maroc</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mes paiements | École Manager</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="navbar">
+      <div class="logo">École Manager <small style="font-weight:400;opacity:.7;">| Espace élève</small></div>
+      <nav>
+        <a href="eleve-accueil.html">Accueil</a>
+        <a href="eleve-notes.html">Mes notes</a>
+        <a href="eleve-emploi.html">Emploi du temps</a>
+        <a href="eleve-paiements.html" class="active">Mes paiements</a>
+        <a href="login.html">Déconnexion</a>
+      </nav>
+    </header>
+
+    <main class="main">
+      <header class="topbar">
+        <h1>Mes paiements</h1>
+        <div class="user-box"><div class="avatar">A</div><span>Amina Benali</span></div>
+      </header>
+
+      <section class="stats">
+        <div class="stat-card green">
+          <div class="label">Déjà payé</div>
+          <div class="value">1 200 MAD</div>
+        </div>
+        <div class="stat-card red">
+          <div class="label">Reste à payer</div>
+          <div class="value">1 200 MAD</div>
+        </div>
+      </section>
+
+      <section class="panel">
+        <h2>Frais de scolarité mensuels</h2>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr><th>Mois</th><th>Montant</th><th>Date de paiement</th><th>Statut</th><th>Reçu</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Septembre</td><td>600 MAD</td><td>04/09/2026</td><td><span class="badge ok">Payé</span></td><td><a href="#" class="btn small secondary">Télécharger</a></td></tr>
+              <tr><td>Octobre</td><td>600 MAD</td><td>03/10/2026</td><td><span class="badge ok">Payé</span></td><td><a href="#" class="btn small secondary">Télécharger</a></td></tr>
+              <tr><td>Novembre</td><td>600 MAD</td><td>-</td><td><span class="badge warn">En attente</span></td><td>-</td></tr>
+              <tr><td>Décembre</td><td>600 MAD</td><td>-</td><td><span class="badge warn">À venir</span></td><td>-</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>&copy; 2026 École Manager. Tous droits réservés.</p>
+      <p>Contact : contact@ecole.ma | Rabat, Maroc</p>
+    </footer>
+</body>
+</html>

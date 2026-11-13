@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Espace élève | École Manager</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="navbar">
+      <div class="logo">École Manager <small style="font-weight:400;opacity:.7;">| Espace élève</small></div>
+      <nav>
+        <a href="eleve-accueil.html" class="active">Accueil</a>
+        <a href="eleve-notes.html">Mes notes</a>
+        <a href="eleve-emploi.html">Emploi du temps</a>
+        <a href="eleve-paiements.html">Mes paiements</a>
+        <a href="login.html">Déconnexion</a>
+      </nav>
+    </header>
+
+    <main class="main">
+      <section class="welcome">
+        <h2>Bonjour, Amina Benali</h2>
+        <p>Classe : 3e A &nbsp;|&nbsp; N° d'élève : 001</p>
+      </section>
+
+      <section class="stats">
+        <div class="stat-card">
+          <div class="label">Moyenne générale</div>
+          <div class="value">13,98 / 20</div>
+        </div>
+        <div class="stat-card orange">
+          <div class="label">Absences</div>
+          <div class="value">2</div>
+        </div>
+        <div class="stat-card green">
+          <div class="label">Matières</div>
+          <div class="value">6</div>
+        </div>
+        <div class="stat-card red">
+          <div class="label">Reste à payer</div>
+          <div class="value">1 200 MAD</div>
+        </div>
+      </section>
+
+      <div class="grid-2">
+        <section class="panel">
+          <h2>Cours de demain</h2>
+          <div class="table-wrap">
+            <table>
+              <thead><tr><th>Horaire</th><th>Matière</th><th>Salle</th></tr></thead>
+              <tbody>
+                <tr><td>08:00 - 09:00</td><td>Français</td><td>Salle 12</td></tr>
+                <tr><td>09:00 - 10:00</td><td>Mathématiques</td><td>Salle 12</td></tr>
+                <tr><td>10:15 - 11:15</td><td>Anglais</td><td>Salle 5</td></tr>
+                <tr><td>11:15 - 12:15</td><td>Informatique</td><td>Salle info</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section class="panel">
+          <h2>Annonces</h2>
+          <div class="notice">Devoir surveillé de mathématiques <small>Jeudi, 08:00</small></div>
+          <div class="notice">Réunion parents-professeurs <small>Samedi, 10:00</small></div>
+          <div class="notice">Rappel : paiement des frais de novembre <small>Avant le 15 du mois</small></div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <p>&copy; 2026 École Manager. Tous droits réservés.</p>
+      <p>Contact : contact@ecole.ma | Rabat, Maroc</p>
+    </footer>
+</body>
+</html>

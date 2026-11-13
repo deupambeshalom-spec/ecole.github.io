@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Élèves | Gestion d'école</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="navbar">
+      <div class="logo">École Manager</div>
+      <nav>
+        <a href="index.html">Tableau de bord</a>
+        <a href="etudiants.html" class="active">Élèves</a>
+        <a href="enseignants.html">Enseignants</a>
+        <a href="classes.html">Classes</a>
+        <a href="matieres.html">Matières</a>
+        <a href="notes.html">Notes</a>
+        <a href="emploi-du-temps.html">Emploi du temps</a>
+        <a href="paiements.html">Paiements</a>
+        <a href="login.html">Déconnexion</a>
+      </nav>
+    </header>
+
+    <main class="main">
+      <header class="topbar">
+        <h1>Gestion des élèves</h1>
+        <div class="user-box">
+          <div class="avatar">A</div>
+          <span>Administrateur</span>
+        </div>
+      </header>
+
+      <section class="panel">
+        <h2>Ajouter un élève</h2>
+        <form action="#" method="post">
+          <div class="form-grid">
+            <div class="field">
+              <label for="nom">Nom</label>
+              <input type="text" id="nom" name="nom" required>
+            </div>
+            <div class="field">
+              <label for="prenom">Prénom</label>
+              <input type="text" id="prenom" name="prenom" required>
+            </div>
+            <div class="field">
+              <label for="naissance">Date de naissance</label>
+              <input type="date" id="naissance" name="naissance" required>
+            </div>
+            <div class="field">
+              <label for="sexe">Sexe</label>
+              <select id="sexe" name="sexe">
+                <option>Masculin</option>
+                <option>Féminin</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="classe">Classe</label>
+              <select id="classe" name="classe">
+                <option>6e A</option>
+                <option>6e B</option>
+                <option>3e A</option>
+                <option>2nde C</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="tuteur">Téléphone du tuteur</label>
+              <input type="tel" id="tuteur" name="tuteur" placeholder="06 00 00 00 00">
+            </div>
+          </div>
+          <button type="submit" class="btn">Enregistrer</button>
+          <button type="reset" class="btn secondary">Annuler</button>
+        </form>
+      </section>
+
+      <section class="panel">
+        <div class="toolbar">
+          <h2>Liste des élèves</h2>
+          <input type="search" placeholder="Rechercher un élève...">
+        </div>
+
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>N°</th>
+                <th>Nom complet</th>
+                <th>Classe</th>
+                <th>Naissance</th>
+                <th>Paiement</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>001</td>
+                <td>Amina Benali</td>
+                <td>3e A</td>
+                <td>14/05/2011</td>
+                <td><span class="badge ok">À jour</span></td>
+                <td>
+                  <a href="#" class="btn small secondary">Modifier</a>
+                  <a href="#" class="btn small danger">Supprimer</a>
+                </td>
+              </tr>
+              <tr>
+                <td>002</td>
+                <td>Youssef El Idrissi</td>
+                <td>6e B</td>
+                <td>03/09/2014</td>
+                <td><span class="badge warn">Partiel</span></td>
+                <td>
+                  <a href="#" class="btn small secondary">Modifier</a>
+                  <a href="#" class="btn small danger">Supprimer</a>
+                </td>
+              </tr>
+              <tr>
+                <td>003</td>
+                <td>Salma Tazi</td>
+                <td>2nde C</td>
+                <td>21/01/2010</td>
+                <td><span class="badge ko">En retard</span></td>
+                <td>
+                  <a href="#" class="btn small secondary">Modifier</a>
+                  <a href="#" class="btn small danger">Supprimer</a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>&copy; 2026 École Manager. Tous droits réservés.</p>
+      <p>Contact : contact@ecole.ma | Rabat, Maroc</p>
+    </footer>
+</body>
+</html>

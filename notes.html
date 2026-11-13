@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notes | Gestion d'école</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="navbar">
+      <div class="logo">École Manager</div>
+      <nav>
+        <a href="index.html">Tableau de bord</a>
+        <a href="etudiants.html">Élèves</a>
+        <a href="enseignants.html">Enseignants</a>
+        <a href="classes.html">Classes</a>
+        <a href="matieres.html">Matières</a>
+        <a href="notes.html" class="active">Notes</a>
+        <a href="emploi-du-temps.html">Emploi du temps</a>
+        <a href="paiements.html">Paiements</a>
+        <a href="login.html">Déconnexion</a>
+      </nav>
+    </header>
+
+    <main class="main">
+      <header class="topbar">
+        <h1>Saisie des notes</h1>
+        <div class="user-box"><div class="avatar">A</div><span>Administrateur</span></div>
+      </header>
+
+      <section class="panel">
+        <div class="filters">
+          <div class="field">
+            <label for="classe">Classe</label>
+            <select id="classe"><option>3e A</option><option>6e B</option><option>2nde C</option></select>
+          </div>
+          <div class="field">
+            <label for="matiere">Matière</label>
+            <select id="matiere"><option>Mathématiques</option><option>Français</option><option>Informatique</option></select>
+          </div>
+          <div class="field">
+            <label for="trimestre">Trimestre</label>
+            <select id="trimestre"><option>Trimestre 1</option><option>Trimestre 2</option><option>Trimestre 3</option></select>
+          </div>
+        </div>
+
+        <form action="#" method="post">
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr><th>Élève</th><th>Devoir 1 (/20)</th><th>Devoir 2 (/20)</th><th>Examen (/20)</th><th>Observation</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Amina Benali</td>
+                  <td><input class="grade-input" type="number" min="0" max="20" step="0.25" value="14"></td>
+                  <td><input class="grade-input" type="number" min="0" max="20" step="0.25" value="16"></td>
+                  <td><input class="grade-input" type="number" min="0" max="20" step="0.25" value="15"></td>
+                  <td>Bon travail</td>
+                </tr>
+                <tr>
+                  <td>Mehdi Kettani</td>
+                  <td><input class="grade-input" type="number" min="0" max="20" step="0.25" value="9"></td>
+                  <td><input class="grade-input" type="number" min="0" max="20" step="0.25" value="11"></td>
+                  <td><input class="grade-input" type="number" min="0" max="20" step="0.25" value="10"></td>
+                  <td>Peut mieux faire</td>
+                </tr>
+                <tr>
+                  <td>Salma Tazi</td>
+                  <td><input class="grade-input" type="number" min="0" max="20" step="0.25" value="17"></td>
+                  <td><input class="grade-input" type="number" min="0" max="20" step="0.25" value="18"></td>
+                  <td><input class="grade-input" type="number" min="0" max="20" step="0.25" value="16"></td>
+                  <td>Excellent</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p style="margin-top:12px;color:var(--muted);font-size:.88rem;">Moyenne de la matière = (Devoir 1 + Devoir 2 + 2 × Examen) / 4.</p>
+          <div style="margin-top:16px;">
+            <button type="submit" class="btn">Enregistrer les notes</button>
+            <button type="reset" class="btn secondary">Réinitialiser</button>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>&copy; 2026 École Manager. Tous droits réservés.</p>
+      <p>Contact : contact@ecole.ma | Rabat, Maroc</p>
+    </footer>
+</body>
+</html>
